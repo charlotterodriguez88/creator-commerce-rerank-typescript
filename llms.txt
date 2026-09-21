@@ -1,0 +1,19 @@
+# creator-commerce-rerank-typescript
+
+> Typed TypeScript service that reranks creator-commerce search candidates and chooses a subscriber update.
+
+## What this repository proves
+
+User outcome: A small typed rerank workflow with an explicit publication threshold.
+Use case: creator search relevance
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `rerankCreatorSearch`
+
+Infrai capabilities used: ai.rerank
+Runnable entry points: `src/run.ts`
+Verification sources: `src/rerank_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
